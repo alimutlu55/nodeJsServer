@@ -21,7 +21,7 @@ app.post('/kayitEkle', function (req, res) {
     var customer1 = new Customer({
         name: req.body.name,
         lastName: req.body.lastName,
-        email: req.body.email,
+        email: req.body.email,  
         password: req.body.password
     })
     customer1.save((error) => {
